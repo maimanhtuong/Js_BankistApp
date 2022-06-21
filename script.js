@@ -3,7 +3,8 @@
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // BANKIST APP
-
+alert(`Account1: mt, password:1111 
+        Account2: lb, password:2222`);
 // Data
 const account1 = {
   owner: 'Mai Tường',
