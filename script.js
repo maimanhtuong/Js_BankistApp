@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // BANKIST APP
-alert(`Account1: mt, password:1111 
-        Account2: lb, password:2222`);
+alert(`Account1: mt ,pasword:1111
+Account2: lb ,pasword:2222`)
 // Data
 const account1 = {
   owner: 'Mai Tường',
@@ -247,7 +247,7 @@ btnLoan.addEventListener('click',function(e){
 })
 
 
-//delete account
+//close account
 
 btnClose.addEventListener('click',function(e){
 
@@ -256,6 +256,7 @@ btnClose.addEventListener('click',function(e){
    const index = accounts.findIndex(acc=>acc.username===currentAccount.username)
     accounts.splice(index,1)
     containerApp.style.opacity=0
+    labelWelcome.textContent=`Login to get started`
     inputCloseUsername.value=inputClosePin.value=''
     console.log(accounts)
   }
@@ -273,7 +274,7 @@ function tik(){
 
     if(time<0){
       containerApp.style.opacity=0
-      labelWelcome.textContent=`Welcome back, ${currentAccount.owner}`
+      labelWelcome.textContent=`Login to get started`
       inputLoginUsername.value= inputLoginPin.value=''
     }
   }
